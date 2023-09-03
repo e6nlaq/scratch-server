@@ -1,0 +1,2 @@
+# scratch-server
+Scratchサーバーのテンプレート
