@@ -1,0 +1,35 @@
+name: Server Runs🔆
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        env:
+            pass: ${{ secrets.pass }}
+            user: ${{ secrets.user }}
+
+        steps:
+            - uses: actions/checkout@v3
+            - name: Setup Node.js💎
+              uses: actions/setup-node@v3
+              with:
+                node-version: '18.x'
+
+                
+            - name: Install Library📦
+              run: |
+                npm i
+
+                # TypeScriptを使う場合のみ
+                npm i typescript -g
+                tsc index.ts
+            
+            - name: Run🏃
+              run: |
+                git config user.name "actions-user"
+                git config user.email "65916846+actions-user@users.noreply.github.com"
+                node index.js
