@@ -1,5 +1,5 @@
 
-# Scratch Server Template
+# Scratch ode.js Server Template
 
 Scratchでサーバーを作る際に使える、テンプレートリポジトリです。
 
@@ -14,6 +14,8 @@ Scratchでサーバーを作る際に使える、テンプレートリポジト�
 `image`フォルダは消して結構です
 
 ## サーバー(Actions)の立て方
+
+GitHub Secretの`user`と`pass`に、それぞれサーバーに使うScratchのアカウント名とパスワードを設定
 
 `.github/workflows/server.yml`の7~11行目のコメントを外せばok
 
