@@ -1,5 +1,5 @@
 
-# Scratch ode.js Server Template
+# Scratch Node.js Server Template
 
 Scratchでサーバーを作る際に使える、テンプレートリポジトリです。
 
